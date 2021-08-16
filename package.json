@@ -1,0 +1,26 @@
+{
+  "name": "learnnodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngocphucnguyen256/blog.git"
+  },
+  "author": "ngocphucnguyen256",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngocphucnguyen256/blog/issues"
+  },
+  "homepage": "https://github.com/ngocphucnguyen256/blog#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
