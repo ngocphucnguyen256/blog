@@ -1,0 +1,12 @@
+@import './variables';
+$color-green: green;
+
+
+h1{
+    color: $color;
+    background-color: grey;
+}
+
+h2{
+    color: $color-green;
+}
