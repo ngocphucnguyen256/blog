@@ -1,12 +1,66 @@
 @import './variables';
-$color-green: green;
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "Inter", sans-serif;
+    background: #080203;
+    color: #fff;
+    font-weight: 400;
+    scroll-behavior: smooth;
+  }
+  
 
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  button {
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  
+  input {
+    font-family: "Inter", sans-serif;
+  }
+  /*# sourceMappingURL=css.css.map */
+
+
+body{
+    background: #080203;
+
+}    
 
 h1{
+    margin-top: 50px;
+    text-align: center;
     color: $color;
-    background-color: grey;
 }
 
 h2{
-    color: $color-green;
+    margin-top: 400px;
+    color: $color;
+
+}
+
+h3{
+    margin-top: 20px;
+    color: $color;
+
+}
+
+.movie__info--img{
+    display: flex;
+    justify-content: center;
+    >img{
+        display: block;
+        width: 500px;
+        height: auto;
+    }
 }

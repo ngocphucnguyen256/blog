@@ -3,6 +3,10 @@ const morgan = require('morgan')
 const handlebars= require('express-handlebars');
 const path = require('path');
 
+//database
+const db=require('./config/db')
+db.connect();
+
 const app = express()
 const port = 3000
 
@@ -32,7 +36,21 @@ app.set('views', path.join(__dirname, 'resources/views'))
 route(app)
 
 
+//ignore favicon
+function ignoreFavicon(req, res, next) {
+  if (req.originalUrl.includes('favicon.ico')) {
+    res.status(204).end()
+  }
+  next();
+}
+app.use(ignoreFavicon)
+
+
+
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+

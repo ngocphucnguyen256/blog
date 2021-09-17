@@ -1,5 +1,5 @@
 .vscode
-
+.env
 
 src/public/css/
 node_modules/

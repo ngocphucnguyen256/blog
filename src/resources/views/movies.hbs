@@ -1,0 +1,21 @@
+<p>THIS IS NEWS PAGE</p>
+
+
+<div class="mt-4">
+  <div class="row">
+    {{#each movies}}
+    <div class="col-sm-6 col-lg-4">
+        <div class="card" style="width: 18rem;">
+            <a href="/movies/{{this.slug}}"><img src="{{this.poster}}" class="card-img-top" alt="{{this.poster}}"></a>
+            <div class="card-body">
+                <a  href="/movies/{{this.slug}}"><h5 class="card-title">{{this.title}}</h5></a>
+                <p class="card-text">{{this.plot}}</p>
+                <a  href="/movies/{{this.slug}}" class="btn btn-primary">More Info</a>
+            </div>
+            </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+

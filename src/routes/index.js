@@ -1,9 +1,9 @@
-const newsRoute= require('./newsRoute')
+const moviesRoute= require('./moviesRoute')
 const appRoute= require('./appRoute')
 
 function route(app){
 
-    app.use('/news', newsRoute);
+    app.use('/movies', moviesRoute);
     app.use('/', appRoute)
   
 }
